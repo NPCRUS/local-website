@@ -8,6 +8,8 @@ object `package` extends RootModule with ScalaModule {
 
   override def ivyDeps = Agg(
     ivy"dev.soundness:telekinesis-core:0.24.0",
+    ivy"dev.soundness:exoskeleton-core:0.24.0",
+    ivy"dev.soundness:kaleidoscope-core:0.24.0",
     ivy"dev.soundness:nomenclature-core:0.24.0",
     ivy"org.jsoup:jsoup:1.18.3",
     ivy"io.circe::circe-core::0.14.9",

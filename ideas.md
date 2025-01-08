@@ -1,0 +1,14 @@
+- some urls are still cannot be parsed, where special characters like `[` are not escaped
+- use soundness for organizing console and tab completions
+- make runtime executable(maybe also soundness)
+- handle process exit - save state when it happens
+    - also save config
+- check resources size, and if the one that you need to download and local sizes are the same - just skip
+- url blacklist logic
+  - on bad url interrupt and ask user if he wants to blacklist it
+  - as a part of initial config
+  - based on file size
+- use soundness for url parsing/comparing/requests
+- logic, where processing urls queue happening in main thread, but fetching and parsing you can do in a separate thread
+    - main thread process url
+    - if prepared documents queue < 5, run 5 threads to fetch and parse 5 more documents from url queue
